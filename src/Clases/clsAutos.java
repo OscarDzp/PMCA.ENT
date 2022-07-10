@@ -1,4 +1,3 @@
-
 package Clases;
 
 /**
@@ -6,6 +5,7 @@ package Clases;
  * @author karii
  */
 public class clsAutos {
+    private String Codigo;
     private String marca;
     private String modelo;
     private int año;
@@ -20,6 +20,23 @@ public class clsAutos {
     private String estado;
     private int valor;
     private int idAutos;
+
+    public String getCodigo() {
+        return Codigo;
+    }
+
+    public void setCodigo(String Codigo) {
+        this.Codigo = Codigo;
+    }
+
+    
+    public int getIdAutos() {
+        return idAutos;
+    }
+
+    public void setIdAutos(int idAutos) {
+        this.idAutos = idAutos;
+    }
 
     public String getMarca() {
         return marca;
@@ -123,16 +140,16 @@ public class clsAutos {
 
     public void setValor(int valor) {
         this.valor = valor;
-        
+
     }
-    
-      public clsAutos () {}
-      
-      public clsAutos (int idAutos) {
-         this.idAutos = idAutos;
-      }
-      
-      
+
+    public clsAutos() {
+    }
+
+    public clsAutos(int idAutos) {
+        this.idAutos = idAutos;
+    }
+
     public clsAutos(String marca, String modelo, int año, String estilo, String motor, String cilindrada, String combustible, int pasajeros, String chasis, String transmision, String kilometraje, String estado, int valor) {
         this.marca = marca;
         this.modelo = modelo;
@@ -148,7 +165,5 @@ public class clsAutos {
         this.estado = estado;
         this.valor = valor;
     }
-    
-    
-    
+
 }
