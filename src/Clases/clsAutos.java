@@ -5,6 +5,7 @@ package Clases;
  * @author karii
  */
 public class clsAutos {
+    
     private String Codigo;
     private String marca;
     private String modelo;
