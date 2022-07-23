@@ -9,7 +9,7 @@ public class clsAutos {
     private String Codigo;
     private String marca;
     private String modelo;
-    private int año;
+  //  private int ano;
     private String estilo;
     private String motor;
     private String cilindrada;
@@ -21,7 +21,7 @@ public class clsAutos {
     private String estado;
     private int valor;
     private int idAutos;
-
+    
     public String getCodigo() {
         return Codigo;
     }
