@@ -10,6 +10,7 @@ public class clsActivo {
     private int idActivo;
     private String codigo;
     private String tipo;
+    private String tipoFragilidad;
     private String nombre;
     private String descripcion;
     private boolean estado;
@@ -40,6 +41,15 @@ public class clsActivo {
     public void setTipo(String tipo) {
         this.tipo = tipo;
     }
+
+    public String getTipoFragilidad() {
+        return tipoFragilidad;
+    }
+
+    public void setTipoFragilidad(String tipoFragilidad) {
+        this.tipoFragilidad = tipoFragilidad;
+    }
+    
 
     public String getNombre() {
         return nombre;
@@ -89,10 +99,11 @@ public class clsActivo {
         this.idActivo = idActivo;
     }
 
-    public clsActivo(int idActivo, String codigo, String tipo, String nombre, String descripcion, boolean estado, int cantidad, String fragilidad) {
+    public clsActivo(int idActivo, String codigo, String tipo, String tipoFragilidad, String nombre, String descripcion, boolean estado, int cantidad, String fragilidad) {
         this.idActivo = idActivo;
         this.codigo = codigo;
         this.tipo = tipo;
+        this.tipoFragilidad = tipoFragilidad;
         this.nombre = nombre;
         this.descripcion = descripcion;
         this.estado = estado;
