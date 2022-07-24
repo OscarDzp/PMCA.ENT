@@ -18,7 +18,8 @@ public class clsEmpleado {
     private String Correo;
     private String telefono;
     private String modalidad;
-    private String Departamento;private boolean estado;
+    private String Departamento;
+    private boolean estado;
     private String codigo;
 
     public int getIdEmpleado() {
