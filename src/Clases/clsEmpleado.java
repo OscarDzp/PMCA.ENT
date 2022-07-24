@@ -1,4 +1,3 @@
-
 package Clases;
 
 /**
@@ -6,18 +5,18 @@ package Clases;
  * @author karii
  */
 public class clsEmpleado {
-    
+
     private int idEmpleado;
     private String Codigo;
     private String tipoIdentificacion;
+    private String identificacion;
     private String Nombre;
     private String primerApellido;
     private String segundoApellido;
-    private String Cargo;
     private String Direccion;
+    private String puesto;
     private String Correo;
     private String telefono;
-    private String modalidad;
     private String Departamento;
     private boolean estado;
     private String codigo;
@@ -46,6 +45,14 @@ public class clsEmpleado {
         this.tipoIdentificacion = tipoIdentificacion;
     }
 
+    public String getIdentificacion() {
+        return identificacion;
+    }
+
+    public void setIdentificacion(String identificacion) {
+        this.identificacion = identificacion;
+    }
+
     public String getNombre() {
         return Nombre;
     }
@@ -70,20 +77,20 @@ public class clsEmpleado {
         this.segundoApellido = segundoApellido;
     }
 
-    public String getCargo() {
-        return Cargo;
-    }
-
-    public void setCargo(String Cargo) {
-        this.Cargo = Cargo;
-    }
-
     public String getDireccion() {
         return Direccion;
     }
 
     public void setDireccion(String Direccion) {
         this.Direccion = Direccion;
+    }
+
+    public String getPuesto() {
+        return puesto;
+    }
+
+    public void setPuesto(String puesto) {
+        this.puesto = puesto;
     }
 
     public String getCorreo() {
@@ -102,14 +109,6 @@ public class clsEmpleado {
         this.telefono = telefono;
     }
 
-    public String getModalidad() {
-        return modalidad;
-    }
-
-    public void setModalidad(String modalidad) {
-        this.modalidad = modalidad;
-    }
-
     public String getDepartamento() {
         return Departamento;
     }
@@ -125,7 +124,7 @@ public class clsEmpleado {
     public void setEstado(boolean estado) {
         this.estado = estado;
     }
-    
+
     public clsEmpleado() {
     }
 
@@ -137,22 +136,20 @@ public class clsEmpleado {
         this.codigo = codigo;
     }
 
-    public clsEmpleado(int idEmpleado, String Codigo, String tipoIdentificacion, String Nombre, String primerApellido, String segundoApellido, String Cargo, String Direccion, String Correo, String telefono, String modalidad, String Departamento, boolean estado, String codigo) {
+    public clsEmpleado(int idEmpleado, String Codigo, String tipoIdentificacion, String identificacion, String Nombre, String primerApellido, String segundoApellido, String Direccion, String puesto, String Correo, String telefono, String Departamento, boolean estado) {
         this.idEmpleado = idEmpleado;
         this.Codigo = Codigo;
         this.tipoIdentificacion = tipoIdentificacion;
+        this.identificacion = identificacion;
         this.Nombre = Nombre;
         this.primerApellido = primerApellido;
         this.segundoApellido = segundoApellido;
-        this.Cargo = Cargo;
         this.Direccion = Direccion;
+        this.puesto = puesto;
         this.Correo = Correo;
         this.telefono = telefono;
-        this.modalidad = modalidad;
         this.Departamento = Departamento;
         this.estado = estado;
-        this.codigo = codigo;
     }
-    
-    
+
 }
