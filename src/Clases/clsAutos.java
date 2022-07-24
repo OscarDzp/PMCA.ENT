@@ -5,11 +5,12 @@ package Clases;
  * @author karii
  */
 public class clsAutos {
-    
+
+    private int idAutos;
     private String Codigo;
     private String marca;
     private String modelo;
-  //  private int ano;
+    private String ano;
     private String estilo;
     private String motor;
     private String cilindrada;
@@ -20,23 +21,22 @@ public class clsAutos {
     private String kilometraje;
     private String estado;
     private int valor;
-    private int idAutos;
-    
-    public String getCodigo() {
-        return Codigo;
-    }
+    private String anotaciones;
 
-    public void setCodigo(String Codigo) {
-        this.Codigo = Codigo;
-    }
-
-    
     public int getIdAutos() {
         return idAutos;
     }
 
     public void setIdAutos(int idAutos) {
         this.idAutos = idAutos;
+    }
+
+    public String getCodigo() {
+        return Codigo;
+    }
+
+    public void setCodigo(String Codigo) {
+        this.Codigo = Codigo;
     }
 
     public String getMarca() {
@@ -55,12 +55,12 @@ public class clsAutos {
         this.modelo = modelo;
     }
 
-    public int getAño() {
-        return año;
+    public String getAno() {
+        return ano;
     }
 
-    public void setAño(int año) {
-        this.año = año;
+    public void setAno(String ano) {
+        this.ano = ano;
     }
 
     public String getEstilo() {
@@ -141,7 +141,14 @@ public class clsAutos {
 
     public void setValor(int valor) {
         this.valor = valor;
+    }
 
+    public String getAnotaciones() {
+        return anotaciones;
+    }
+
+    public void setAnotaciones(String anotaciones) {
+        this.anotaciones = anotaciones;
     }
 
     public clsAutos() {
@@ -151,10 +158,11 @@ public class clsAutos {
         this.idAutos = idAutos;
     }
 
-    public clsAutos(String marca, String modelo, int año, String estilo, String motor, String cilindrada, String combustible, int pasajeros, String chasis, String transmision, String kilometraje, String estado, int valor) {
+    public clsAutos(String Codigo, String marca, String modelo, String ano, String estilo, String motor, String cilindrada, String combustible, int pasajeros, String chasis, String transmision, String kilometraje, String estado, int valor, String anotaciones) {
+        this.Codigo = Codigo;
         this.marca = marca;
         this.modelo = modelo;
-        this.año = año;
+        this.ano = ano;
         this.estilo = estilo;
         this.motor = motor;
         this.cilindrada = cilindrada;
@@ -165,6 +173,7 @@ public class clsAutos {
         this.kilometraje = kilometraje;
         this.estado = estado;
         this.valor = valor;
+        this.anotaciones = anotaciones;
     }
 
 }
