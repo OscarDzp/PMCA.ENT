@@ -10,7 +10,7 @@ public class clsAutos {
     private String Codigo;
     private String marca;
     private String modelo;
-    private String ano;
+    private int ano;
     private String estilo;
     private String motor;
     private String cilindrada;
@@ -21,7 +21,7 @@ public class clsAutos {
     private String kilometraje;
     private String estado;
     private int valor;
-    private String anotaciones; 
+    private String anotaciones;
     private String codigo;
 
     public int getIdAutos() {
@@ -56,11 +56,11 @@ public class clsAutos {
         this.modelo = modelo;
     }
 
-    public String getAno() {
+    public int getAno() {
         return ano;
     }
 
-    public void setAno(String ano) {
+    public void setAno(int ano) {
         this.ano = ano;
     }
 
@@ -162,8 +162,9 @@ public class clsAutos {
     public clsAutos(String codigo) {
         this.codigo = codigo;
     }
-    
-    public clsAutos(String Codigo, String marca, String modelo, String ano, String estilo, String motor, String cilindrada, String combustible, int pasajeros, String chasis, String transmision, String kilometraje, String estado, int valor, String anotaciones) {
+
+    public clsAutos(int idAutos, String Codigo, String marca, String modelo, int ano, String estilo, String motor, String cilindrada, String combustible, int pasajeros, String chasis, String transmision, String kilometraje, String estado, int valor, String anotaciones, String codigo) {
+        this.idAutos = idAutos;
         this.Codigo = Codigo;
         this.marca = marca;
         this.modelo = modelo;
@@ -179,6 +180,7 @@ public class clsAutos {
         this.estado = estado;
         this.valor = valor;
         this.anotaciones = anotaciones;
+        this.codigo = codigo;
     }
 
 }
